@@ -37,5 +37,7 @@ html lang="en"
         /! /.nav-collapse
     .container
       .col-lg-6.col-lg-push-3
+        .notice= notice
+        .alert= alert
         == yield
     = javascript_include_tag 'application', 'data-turbolinks-tracktrue' => true
