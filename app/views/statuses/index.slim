@@ -1,0 +1,20 @@
+h1.page-header Feed
+
+//New Status
+= link_to new_status_path, class:'btn btn-block btn-primary'
+  | New Status
+
+br
+
+.list-group
+  - @statuses.each do |status|
+    .media.list-group-item
+      = link_to status, method: :delete, data:{confirm:'Do you really want to delete me?'} do
+        btn.close.delete type="button"
+              | &times;
+      a.pull-left href="#"
+        img.media-object src="http://placehold.it/64x64/E8117F/000000" alt="Profile Pic"
+      .media-body
+        h4.media-heading= status.name
+        p= status.content
+        p.status-time= link_to time_ago_in_words(status.created_at) + " ago"

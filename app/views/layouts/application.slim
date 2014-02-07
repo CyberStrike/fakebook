@@ -1,0 +1,41 @@
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta content="IE=edge" http-equiv="X-UA-Compatible"
+    meta content="width=(device-width,)initial-scale=1" name="viewport"
+    meta content="" name="description"
+    meta content="" name="author"
+    link href="../../assets/ico/favicon.ico"
+    title Starter Template for Bootstrap
+    /! Just for debugging purposes. Don't actually copy this line!
+    /![if lt IE 9] <script src="../../assets/js/ie8-responsive-file-warning.js"></script>
+    /! HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    /![if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    | <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  body
+    .navbar.navbar-inverse.navbar-fixed-top role="navigation"
+      .container
+        .navbar-header
+          button.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse" type="button"
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          = link_to statuses_path, class:'navbar-brand'
+            | TreeBook
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a href="#" Home
+            li
+              a href="#about" About
+            li
+              a href="#contact" Contact
+        /! /.nav-collapse
+    .container
+      .col-lg-6.col-lg-push-3
+        == yield
+    = javascript_include_tag 'application', 'data-turbolinks-tracktrue' => true
