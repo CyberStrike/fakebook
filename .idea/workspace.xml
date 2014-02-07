@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6208cfe3-f51e-4f56-b85c-79a839235c54" name="Default" comment="&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.slim" afterPath="$PROJECT_DIR$/app/views/layouts/application.slim" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
+    <list default="true" id="6208cfe3-f51e-4f56-b85c-79a839235c54" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/treebook2.iml" afterPath="$PROJECT_DIR$/.idea/treebook2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="treebook2.iws" />
@@ -50,10 +42,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/config/application.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="36" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.78158456" vertical-offset="9" max-vertical-offset="561">
+                <state line="22" column="36" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="561">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="20140207085239_devise_create_users.rb" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/db/migrate/20140207085239_devise_create_users.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="1" column="12" selection-start="62" selection-end="62" vertical-scroll-proportion="0.03926097" vertical-offset="0" max-vertical-offset="816">
                   <folding />
                 </state>
               </provider>
@@ -111,7 +112,7 @@
           <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/config/routes.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="17" selection-start="742" selection-end="742" vertical-scroll-proportion="0.80085653" vertical-offset="0" max-vertical-offset="1122">
+                <state line="24" column="17" selection-start="780" selection-end="780" vertical-scroll-proportion="0.80085653" vertical-offset="34" max-vertical-offset="1139">
                   <folding />
                 </state>
               </provider>
@@ -493,12 +494,16 @@
       <created>1391761411690</created>
       <updated>1391761411690</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Devise Installed">
+      <created>1391762992372</created>
+      <updated>1391762992372</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33063427" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -510,7 +515,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33468285" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33468285" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33468285" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -555,7 +560,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="init commit&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit&#10;" />
+    <MESSAGE value="Devise Installed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Devise Installed" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -837,7 +843,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="17" selection-start="742" selection-end="742" vertical-scroll-proportion="0.80085653" vertical-offset="0" max-vertical-offset="1122">
+        <state line="24" column="17" selection-start="780" selection-end="780" vertical-scroll-proportion="0.80085653" vertical-offset="34" max-vertical-offset="1139">
           <folding />
         </state>
       </provider>
@@ -851,7 +857,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="36" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.78158456" vertical-offset="9" max-vertical-offset="561">
+        <state line="22" column="36" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="446">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140207085239_devise_create_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="12" selection-start="62" selection-end="62" vertical-scroll-proportion="0.03926097" vertical-offset="0" max-vertical-offset="816">
           <folding />
         </state>
       </provider>
