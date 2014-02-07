@@ -34,6 +34,18 @@ html lang="en"
               a href="#about" About
             li
               a href="#contact" Contact
+          ul.nav.navbar-nav.navbar-right
+            - if user_signed_in?
+              li
+                = link_to edit_user_registration_path
+                  = current_user.full_name
+              li
+                = link_to 'Log Out', destroy_user_session_path, method: :delete
+            - else
+              li
+                = link_to 'Register', new_user_registration_path
+              li
+                = link_to 'Login', new_user_session_path
         /! /.nav-collapse
     .container
       .col-lg-6.col-lg-push-3
