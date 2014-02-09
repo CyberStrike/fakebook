@@ -1,5 +1,15 @@
 Treebook2::Application.routes.draw do
   devise_for :users
+
+  devise_scope :user do
+    get "login", :to => "devise/sessions#new"
+    get "sign_up", :to => "devise/registrations#new"
+    get "logout", :to => "devise/sessions#destroy", as: :logout
+
+  end
+
+
+
   resources :statuses
 
   root :to => 'statuses#index'

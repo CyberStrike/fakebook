@@ -5,29 +5,47 @@ class StatusesControllerTest < ActionController::TestCase
     @status = statuses(:one)
   end
 
-  test "should get index" do
+  test "can get index" do
     get :index
     assert_response :success
     assert_not_nil assigns(:statuses)
   end
 
-  test "should get new" do
+  test "can show status" do
+    get :show, id: @status
+    assert_response :success
+  end
+
+  test "can not see new status page unless signed in" do
+    get :new
+    assert_response :redirect
+    assert_redirected_to new_user_session_path
+    end
+
+  test "can see new status page if signed in" do
+    sign_in users(:chris)
     get :new
     assert_response :success
   end
 
-  test "should create status" do
+  test "can not create status unless signed in" do
     assert_difference('Status.count') do
-      post :create, status: { content: @status.content, name: @status.name }
+      post :create, status: { content: @status.content }
     end
+    assert_response :redirect
+    assert_redirected_to new_user_session_path
+  end
 
+  test "can create status if signed in" do
+    sign_in users(:chris)
+    assert_difference('Status.count') do
+      post :create, status: { content: @status.content }
+    end
+    assert_response :redirect
     assert_redirected_to status_path(assigns(:status))
   end
 
-  test "should show status" do
-    get :show, id: @status
-    assert_response :success
-  end
+
 
   test "should get edit" do
     get :edit, id: @status
@@ -35,7 +53,7 @@ class StatusesControllerTest < ActionController::TestCase
   end
 
   test "should update status" do
-    patch :update, id: @status, status: { content: @status.content, name: @status.name }
+    patch :update, id: @status, status: { content: @status.content}
     assert_redirected_to status_path(assigns(:status))
   end
 
@@ -46,4 +64,6 @@ class StatusesControllerTest < ActionController::TestCase
 
     assert_redirected_to statuses_path
   end
+
 end
+
