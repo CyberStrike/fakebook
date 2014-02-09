@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6208cfe3-f51e-4f56-b85c-79a839235c54" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/statuses_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/statuses_controller_test.rb" />
+    <list default="true" id="6208cfe3-f51e-4f56-b85c-79a839235c54" name="Default" comment="added missing files.. ??&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/status.rb" afterPath="$PROJECT_DIR$/app/models/status.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/status_test.rb" afterPath="$PROJECT_DIR$/test/models/status_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="treebook2.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/" />
-    <ignored path="db/" />
+    <ignored mask="db/*.sqlite3" />
     <ignored path="log/" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,28 +42,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="statuses_controller_test.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/controllers/statuses_controller_test.rb">
+      <file leaf-file-name="status_test.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/models/status_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="5" selection-start="2248" selection-end="2248" vertical-scroll-proportion="0.5595855" vertical-offset="1246" max-vertical-offset="1632">
+            <state line="26" column="5" selection-start="660" selection-end="660" vertical-scroll-proportion="0.86787564" vertical-offset="107" max-vertical-offset="544">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.slim" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/statuses/index.slim">
+      <file leaf-file-name="status.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/status.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="26" selection-start="370" selection-end="370" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="425">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="statuses_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/statuses_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="24" selection-start="814" selection-end="814" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
+            <state line="4" column="20" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
               <folding />
             </state>
           </provider>
@@ -105,7 +98,6 @@
         <option value="$PROJECT_DIR$/app/views/statuses/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/statuses/edit.slim" />
         <option value="$PROJECT_DIR$/app/views/statuses/show.slim" />
-        <option value="$PROJECT_DIR$/app/models/status.rb" />
         <option value="db-console:/f7603ff4/b5abfc6d-18d5-4e08-91c2-075b34a05365/" />
         <option value="$PROJECT_DIR$/app/views/statuses/_form.html.slim" />
         <option value="$PROJECT_DIR$/test/models/user_test.rb" />
@@ -123,8 +115,10 @@
         <option value="$PROJECT_DIR$/test/fixtures/users.yml" />
         <option value="$PROJECT_DIR$/app/controllers/statuses_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/statuses/index.slim" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/test/controllers/statuses_controller_test.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/test/models/status_test.rb" />
+        <option value="$PROJECT_DIR$/app/models/status.rb" />
       </list>
     </option>
   </component>
@@ -148,7 +142,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -187,12 +181,76 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treebook2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treebook2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treebook2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treebook2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treebook2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treebook2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treebook2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="treebook2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/log" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/db/test.sqlite3" />
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
@@ -593,7 +651,19 @@
       <created>1391950840812</created>
       <updated>1391950840812</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added tests for authentication to status destroy&#10;">
+      <created>1391951306971</created>
+      <updated>1391951306971</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added missing files.. ??">
+      <created>1391951376907</created>
+      <updated>1391951376907</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added migrates">
+      <created>1391951782724</created>
+      <updated>1391951782724</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -602,7 +672,7 @@
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4439946" sideWeight="0.532175" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4439946" sideWeight="0.532175" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.3292683" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="544" y="183" width="512" height="493" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -610,7 +680,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45479083" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4439946" sideWeight="0.46782497" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4439946" sideWeight="0.46782497" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -638,7 +708,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.36856368" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18661518" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4439946" sideWeight="0.46782497" order="7" side_tool="false" content_ui="tabs" />
@@ -670,7 +740,10 @@
     <MESSAGE value="added tests for new status and create status" />
     <MESSAGE value="added authentication test for edit statuses" />
     <MESSAGE value="added tests for authentication to status update" />
-    <option name="LAST_COMMIT_MESSAGE" value="added tests for authentication to status update" />
+    <MESSAGE value="added tests for authentication to status destroy&#10;" />
+    <MESSAGE value="added missing files.. ??" />
+    <MESSAGE value="added migrates" />
+    <option name="LAST_COMMIT_MESSAGE" value="added migrates" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -735,7 +808,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="35" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.0" vertical-offset="3966" max-vertical-offset="4420" />
+        <state line="21" column="35" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.0" vertical-offset="3966" max-vertical-offset="4420">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
@@ -895,20 +970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/models/status_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="107" selection-end="107" vertical-scroll-proportion="0.095104896" vertical-offset="0" max-vertical-offset="715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/status.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.13212435" vertical-offset="0" max-vertical-offset="386">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="501" selection-end="501" vertical-scroll-proportion="0.46469247" vertical-offset="0" max-vertical-offset="439">
@@ -978,27 +1039,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/statuses_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="24" selection-start="814" selection-end="814" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/statuses/index.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="26" selection-start="370" selection-end="370" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="62" selection-end="62" vertical-scroll-proportion="0.12927757" vertical-offset="0" max-vertical-offset="526">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="0" selection-start="818" selection-end="818" vertical-scroll-proportion="0.10526316" vertical-offset="537" max-vertical-offset="1088">
@@ -1013,9 +1053,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="1" selection-start="19" selection-end="19" vertical-scroll-proportion="0.18836565" vertical-offset="0" max-vertical-offset="361">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/controllers/statuses_controller_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="5" selection-start="2248" selection-end="2248" vertical-scroll-proportion="0.5595855" vertical-offset="1246" max-vertical-offset="1632">
+        <state line="86" column="5" selection-start="2248" selection-end="2248" vertical-scroll-proportion="3.7875648" vertical-offset="0" max-vertical-offset="1632">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/statuses_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="20" selection-start="332" selection-end="332" vertical-scroll-proportion="0.5284974" vertical-offset="0" max-vertical-offset="1394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/statuses/index.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="26" selection-start="370" selection-end="370" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/status.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="20" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/models/status_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="5" selection-start="660" selection-end="660" vertical-scroll-proportion="0.86787564" vertical-offset="107" max-vertical-offset="544">
           <folding />
         </state>
       </provider>
