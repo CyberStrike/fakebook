@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+# column: value
+#
+#  column: value
+
+chris:
+  id: 10
+  first_name: "Chris"
+  last_name: "Scott"
+  email: "cyberstrike@gmail.com"
+  username: "cyberstrike"
+  encrypted_password: "$2a$10$MXTwHhA/y2/VS2fzfee1gegRybsCCgH3CiMJ62ff9BsSMSiWOHCJW"
