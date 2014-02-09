@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6208cfe3-f51e-4f56-b85c-79a839235c54" name="Default" comment="added tests for new status and create status&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Production__treebook2.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Production__treebook2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+    <list default="true" id="6208cfe3-f51e-4f56-b85c-79a839235c54" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/statuses_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/statuses_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/treebook2.iml" afterPath="$PROJECT_DIR$/.idea/treebook2.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="treebook2.iws" />
@@ -47,7 +43,7 @@
       <file leaf-file-name="statuses_controller_test.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/controllers/statuses_controller_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="0" selection-start="1817" selection-end="1817" vertical-scroll-proportion="0.34455958" vertical-offset="1057" max-vertical-offset="1479">
+            <state line="86" column="5" selection-start="2248" selection-end="2248" vertical-scroll-proportion="0.5595855" vertical-offset="1246" max-vertical-offset="1632">
               <folding />
             </state>
           </provider>
@@ -593,7 +589,11 @@
       <created>1391950483691</created>
       <updated>1391950483691</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added tests for authentication to status update">
+      <created>1391950840812</created>
+      <updated>1391950840812</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -669,7 +669,8 @@
     <MESSAGE value="improved notifications" />
     <MESSAGE value="added tests for new status and create status" />
     <MESSAGE value="added authentication test for edit statuses" />
-    <option name="LAST_COMMIT_MESSAGE" value="added authentication test for edit statuses" />
+    <MESSAGE value="added tests for authentication to status update" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tests for authentication to status update" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1014,7 +1015,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/controllers/statuses_controller_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="0" selection-start="1817" selection-end="1817" vertical-scroll-proportion="0.34455958" vertical-offset="1057" max-vertical-offset="1479">
+        <state line="86" column="5" selection-start="2248" selection-end="2248" vertical-scroll-proportion="0.5595855" vertical-offset="1246" max-vertical-offset="1632">
           <folding />
         </state>
       </provider>
