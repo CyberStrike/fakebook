@@ -45,9 +45,14 @@ class StatusesControllerTest < ActionController::TestCase
     assert_redirected_to status_path(assigns(:status))
   end
 
+  test "can not edit status unless signed in" do
+    get :edit, id: @status
+    assert_response :redirect
+    assert_redirected_to new_user_session_path
+  end
 
-
-  test "should get edit" do
+  test "can edit status if signed in" do
+    sign_in users(:chris)
     get :edit, id: @status
     assert_response :success
   end
