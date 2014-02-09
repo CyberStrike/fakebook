@@ -19,7 +19,7 @@ class UserTest < ActiveSupport::TestCase
     assert !user.errors[:username].empty?
     end
 
-  test "A user should have a unique username" do
+   test "A user should have a unique username" do
     user = User.new
     user.first_name = 'Chris'
     user.last_name = 'Scott'
@@ -32,10 +32,19 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "A user should have a unique username with no spaces" do
-    user = User.new
+    user = User.new(first_name: 'Chris', last_name: 'Scott', email: 'cyberstrike@gmail.com')
+    user.password = user.password_confirmation = '123456789'
     user.username = "Spaced Username"
     assert !user.save
     assert !user.errors[:username].empty?
     assert user.errors[:username].include?("Cannot Include Spaces")
   end
+
+  test "A user has a properly formatted username" do
+    user = User.new(first_name: 'Chris', last_name: 'Scott', email: 'cyberstrike@gmail.com')
+    user.username = 'cyberstrike_1 '
+    assert !user.valid?
+  end
+
+
 end
