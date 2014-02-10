@@ -14,4 +14,8 @@ class CustomRoutesTest < ActionDispatch::IntegrationTest
      get '/sign_up'
      assert_response :success
    end
+   test "get user profile" do
+     get '/cyberstrike'
+     assert_response :success
+   end
 end

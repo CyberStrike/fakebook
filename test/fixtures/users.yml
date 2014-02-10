@@ -14,3 +14,10 @@ chris:
   email: "cyberstrike@gmail.com"
   username: "cyberstrike"
   encrypted_password: "$2a$10$MXTwHhA/y2/VS2fzfee1gegRybsCCgH3CiMJ62ff9BsSMSiWOHCJW"
+
+nyk:
+  first_name: "Nyktelios"
+  last_name: "Nyx"
+  email: "nyktelios@gmail.com"
+  username: "nyktelios"
+  encrypted_password: "$2a$10$MXTwHhA/y2/VS2fzfee1gegRybsCCgH3CiMJ62ff9BsSMSiWOHCJW"
