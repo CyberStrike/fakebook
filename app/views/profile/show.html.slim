@@ -1,2 +1,19 @@
-h1 Profile#show
-p Find me in app/views/profile/show.html.slim
+.page-header
+  h1= @user.full_name
+
+- if @statuses
+  .list-group
+    - @statuses.each do |status|
+      .media.list-group-item
+        = link_to status, method: :delete, data:{confirm:'Do you really want to delete me?'} do
+          button.btn.close.delete type="button"
+            | &times;
+        a.pull-left href="#"
+          img.media-object src="http://placehold.it/64x64/E8117F/000000" alt="Profile Pic"
+        .media-body
+          /h4.media-heading= status.user.full_name
+          = status.content
+        .pull-right.status-time= link_to status do
+          - time_ago_in_words(status.created_at) + " ago"
+- else
+    h3.text-center  This user has no status updates

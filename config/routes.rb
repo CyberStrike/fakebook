@@ -1,5 +1,6 @@
 Treebook2::Application.routes.draw do
   get "profile/show"
+
   devise_for :users
 
   devise_scope :user do
@@ -9,11 +10,11 @@ Treebook2::Application.routes.draw do
 
   end
 
-
-
   resources :statuses
 
   root :to => 'statuses#index'
+
+  get '/:username', :to => 'profile#show'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
