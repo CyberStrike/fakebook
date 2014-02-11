@@ -14,8 +14,11 @@ br
       a.pull-left href="#"
         img.media-object src="http://placehold.it/64x64/E8117F/000000" alt="Profile Pic"
       .media-body
-        /h4.media-heading= status.user.full_name
-        h4.media-heading A Fake Name
+        - if status.user
+          = link_to current_user.username do
+            h4.media-heading= status.user.full_name
+        - else
+          h4.media-heading This is a fake status..?
         = status.content
       .status-time= link_to status do
         - time_ago_in_words(status.created_at) + " ago"
