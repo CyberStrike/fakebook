@@ -26,13 +26,13 @@ html lang="en"
           = link_to statuses_path, class:'navbar-brand'
             | FakeBook
         .collapse.navbar-collapse
-          ul.nav.navbar-nav
-            li.active
-              a href="#" Home
-            li
-              a href="#about" About
-            li
-              a href="#contact" Contact
+          /ul.nav.navbar-nav
+          /  li.active
+          /    a href="#" Home
+          /  li
+          /    a href="#about" About
+          /  li
+          /    a href="#contact" Contact
           ul.nav.navbar-nav.navbar-right
             - if user_signed_in?
               li

@@ -38,11 +38,11 @@ class StatusesControllerTest < ActionController::TestCase
 
   test "can create status if signed in" do
     sign_in users(:chris)
-    assert_difference('Status.count') do
+    assert_difference('Status.count', +1) do
       post :create, status: { content: @status.content }
     end
     assert_response :redirect
-    assert_redirected_to status_path(assigns(:status))
+    assert_redirected_to statuses_url
   end
 
   test "can not edit status unless signed in" do
