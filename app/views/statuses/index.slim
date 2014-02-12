@@ -5,10 +5,13 @@ h1.page-header Feed
 
 br
 
+= render 'form'
+
 .list-group
   - @statuses.each do |status|
     .media.list-group-item
-      = link_to status, method: :delete, data:{confirm:'Do you really want to delete me?'} do
+      /= link_to status, method: :delete, data:{confirm:'Do you really want to delete me?'} do
+      = link_to status, method: :delete do
         button.btn.close.delete type="button"
           | &times;
       a.pull-left href="#"
