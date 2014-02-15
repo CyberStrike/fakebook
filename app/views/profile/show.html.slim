@@ -11,7 +11,7 @@
         a.pull-left href="#"
           img.media-object src="http://placehold.it/64x64/E8117F/000000" alt="Profile Pic"
         .media-body
-          /h4.media-heading= status.user.full_name
+          h4.media-heading= status.user.full_name
           = status.content
         .pull-right.status-time= link_to status do
           - time_ago_in_words(status.created_at) + " ago"

@@ -11,6 +11,7 @@
   .field
     = f.label "New Status"
     br
-    = f.text_area :content
+    .input-group= f.text_area :content, placeholder: "What's up?",class: 'form-control'
   .actions
-    = f.submit
+    = f.submit "Post", class: 'btn btn-primary btn-sm'
+
