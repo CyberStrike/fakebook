@@ -21,3 +21,10 @@ nyk:
   email: "nyktelios@gmail.com"
   username: "nyktelios"
   encrypted_password: "$2a$10$MXTwHhA/y2/VS2fzfee1gegRybsCCgH3CiMJ62ff9BsSMSiWOHCJW"
+
+user3:
+  first_name: "User"
+  last_name: "3"
+  email: "user3@email.com"
+  username: "User3"
+  encrypted_password: "$2a$10$MXTwHhA/y2/VS2fzfee1gegRybsCCgH3CiMJ62ff9BsSMSiWOHCJW"

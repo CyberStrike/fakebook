@@ -103,6 +103,12 @@ GEM
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
+    shoulda (3.5.0)
+      shoulda-context (~> 1.0, >= 1.0.1)
+      shoulda-matchers (>= 1.4.1, < 3.0)
+    shoulda-context (1.1.6)
+    shoulda-matchers (2.5.0)
+      activesupport (>= 3.0.0)
     slim (2.0.2)
       temple (~> 0.6.6)
       tilt (>= 1.3.3, < 2.1)
@@ -154,6 +160,7 @@ DEPENDENCIES
   rails (= 4.0.1)
   sass-rails (~> 4.0.0)
   sdoc
+  shoulda
   slim-rails
   sqlite3
   therubyracer
