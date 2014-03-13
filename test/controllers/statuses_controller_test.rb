@@ -45,6 +45,19 @@ class StatusesControllerTest < ActionController::TestCase
     assert_redirected_to statuses_url
   end
 
+  test "can create status only for signed in user" do
+    sign_in users(:chris)
+    assert_difference('Status.count', +1) do
+      post :create, status: { content: @status.content , user_id: users(:nyk).id}
+    end
+    assert_response :redirect
+    assert_redirected_to statuses_url
+    assert_equal assigns(:status).user_id, users(:chris).id
+
+  end
+
+  ##Update
+
   test "can not edit status unless signed in" do
     get :edit, id: @status
     assert_response :redirect
@@ -69,6 +82,13 @@ class StatusesControllerTest < ActionController::TestCase
     assert_redirected_to status_path(assigns(:status))
   end
 
+  test "can update status only for signed in user" do
+    sign_in users(:chris)
+    patch :update, id: @status, status: { content: @status.content, user_id: users(:nyk).id }
+    assert_redirected_to status_path(assigns(:status))
+  end
+
+  ##Destroy
 
   test "can not destroy status unless signed in" do
     assert_no_difference('Status.count', -1) do

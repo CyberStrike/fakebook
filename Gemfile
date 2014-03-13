@@ -12,36 +12,34 @@ group :development, :test do
   gem 'debugger-xml'
 end
 
-
-
 group :production do
 
   gem 'pg'
 
 end
+
 # Views
-#
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+  gem 'sass-rails', '~> 4.0.0'
 
 # Pull our selves up by our Bootstraps
-gem 'bootstrap-sass'
+  gem 'bootstrap-sass'
 
 # Lose some weight
-gem 'slim-rails'
+  gem 'slim-rails'
 
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+  gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+  gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+  gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+  gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
