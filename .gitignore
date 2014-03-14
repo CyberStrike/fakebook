@@ -20,7 +20,7 @@
 *.iws
 *.iml
 
-.idea
+.idea/
 
 .bundle
 

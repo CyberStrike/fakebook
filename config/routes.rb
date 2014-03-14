@@ -12,6 +12,8 @@ Treebook2::Application.routes.draw do
 
   resources :statuses
 
+  resources :user_friendships
+
   root :to => 'statuses#index'
 
   get '/:username', :to => 'profile#show'
