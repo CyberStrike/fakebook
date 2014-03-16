@@ -3,10 +3,12 @@ class UserFriendshipsController < ApplicationController
   before_filter :authenticate_user!, only: [:new]
 
   def new
+    logger.debug "Friend Params: #{friend_params} "
     if friend_params.empty?
       flash[:alert] = "Friend not found"
     else
-      @friend = User.find(friend_params)
+      @friend = User.find(params[:friend_id])
+      @user_friendship = UserFriendship.new(friend: @friend)
     end
   end
 

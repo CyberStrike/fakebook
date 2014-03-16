@@ -28,7 +28,7 @@ class UserFriendshipsControllerTest < ActionController::TestCase
       end
 
       should 'show friends name' do
-        get :new, friend_id: users(:nyk).id
+        get :new, {friend_id: users(:nyk).id}
         assert_match(/#{users(:nyk).full_name}/, response.body)
       end
 
@@ -39,9 +39,10 @@ class UserFriendshipsControllerTest < ActionController::TestCase
 
       should 'new friend equals current user' do
         get :new, friend_id: users(:nyk).id
-        assert_equal users(:chris), assigns(:user_friendship).friend
+        assert_equal users(:nyk), assigns(:user_friendship).friend
       end
 
     end
   end
+
 end
