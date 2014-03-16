@@ -37,11 +37,15 @@ class UserFriendshipsControllerTest < ActionController::TestCase
         assert assigns(:user_friendship)
       end
 
-      should 'new friend equals current user' do
+      should 'new friend equals passed friend' do
         get :new, friend_id: users(:nyk).id
         assert_equal users(:nyk), assigns(:user_friendship).friend
-      end
+        end
 
+      should 'new friend equals current user' do
+        get :new, friend_id: users(:user3).id
+        assert_equal users(:chris), assigns(:user_friendship).user
+      end
     end
   end
 

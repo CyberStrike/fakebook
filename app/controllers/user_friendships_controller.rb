@@ -8,7 +8,7 @@ class UserFriendshipsController < ApplicationController
       flash[:alert] = "Friend not found"
     else
       @friend = User.find(params[:friend_id])
-      @user_friendship = UserFriendship.new(friend: @friend)
+      @user_friendship = current_user.user_friendships.new(friend: @friend)
     end
   end
 
