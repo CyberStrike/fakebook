@@ -16,7 +16,7 @@ Treebook2::Application.routes.draw do
 
   root :to => 'statuses#index'
 
-  get '/:username', :to => 'profile#show'
+  get '/:username', :to => 'profile#show', as: 'profile'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

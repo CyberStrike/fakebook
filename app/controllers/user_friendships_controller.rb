@@ -5,7 +5,7 @@ class UserFriendshipsController < ApplicationController
   def new
     logger.debug "Friend Params: #{friend_params} "
     if friend_params.empty?
-      flash[:alert] = "Friend not found"
+        flash[:alert] = "Friend not found"
     else
       @friend = User.find(params[:friend_id])
       @user_friendship = current_user.user_friendships.new(friend: @friend)

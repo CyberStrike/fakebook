@@ -1,4 +1,3 @@
-
 br
 
 = render 'form'
@@ -11,7 +10,7 @@ br
         button.btn.close.delete type="button"
           | &times;
       a.pull-left href="#"
-        img.media-object src="http://placehold.it/64x64/E8117F/000000" alt="Profile Pic"
+        img.media-object.img-circle src=status.user.gravatar alt="Profile Pic"
       .media-body
         - if status.user
           = link_to status.user.username do
