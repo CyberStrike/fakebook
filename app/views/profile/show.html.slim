@@ -1,6 +1,6 @@
 .page-header
   h1= @user.full_name
-
+  = link_to 'Add Friend', new_user_friendship_path(friend_id: @user), class: 'btn btn-primary'
 - if @statuses
   .list-group
     - @statuses.each do |status|

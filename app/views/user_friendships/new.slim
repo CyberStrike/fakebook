@@ -5,6 +5,6 @@ h1
     p Do you you really want to friend #{@friend.full_name}
 
     = form_for @user_friendship, method: :post do |form|
-      /= form.hidden_field :friend_id, @friend.id
-      .btn.btn-primary= submit_tag "Friend #{@friend.first_name}"
-      .btn.btn-danger= link_to 'Cancel', profile_path(@friend.username)
+      = hidden_field :friend_id, "#{@friend.id}"
+      = submit_tag "Friend #{@friend.first_name}", class:'btn btn-primary'
+      = link_to 'Cancel', profile_path(@friend.username), class: 'btn btn-danger'

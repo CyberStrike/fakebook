@@ -18,5 +18,5 @@ br
         - else
           h4.media-heading This is a fake status..?
         = status.content
-      .status-time= link_to status do
+      .pull-right.status-time= link_to status do
         - time_ago_in_words(status.created_at) + " ago"
