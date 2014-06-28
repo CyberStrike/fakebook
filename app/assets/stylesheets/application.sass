@@ -12,8 +12,25 @@
 @import "bootstrap"
 @import "statuses"
 
+$color1: #4c66a4
+$color2: #9aa9c8
+
 body
   padding-top: 50px
 
 .alert
   margin-top: 10px
+
+.navbar-fakebook
+  @extend .navbar-inverse
+  background: $color1
+  color: $color2
+  > li > a
+    color: $color2
+  a
+    color: $color2
+    &:hover, &:focus
+      color: #ffffff
+
+.navbar-nav
+  color: $color1

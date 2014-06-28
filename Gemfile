@@ -1,41 +1,34 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.1'
+gem 'rails', '4.1.1'
 
-gem 'devise'
+# Tools
+####################
+
+gem 'devise' # Users
+gem 'state_machine' # Event Based stuff
 
 group :development, :test do
-  # Use sqlite3 as the database for Active Record
-    gem 'sqlite3'
-
-# Use debugger
-  gem 'debugger'
-  gem 'debugger-xml'
-end
-
-group :test do
+  gem 'sqlite3' # Use sqlite3 as the database for Active Record
   gem 'shoulda'
+  gem 'debugger' # Use debugger
+  gem 'debugger-xml'
+  gem 'better_errors' # Better Errors
+  gem 'binding_of_caller'
+
 end
 
 group :production do
-
   gem 'pg'
   gem 'rails_12factor'
-
 end
 
 # Views
 
-# Use SCSS for stylesheets
-  gem 'sass-rails', '~> 4.0.0'
-
-# Pull our selves up by our Bootstraps
-  gem 'bootstrap-sass'
-
-# Lose some weight
-  gem 'slim-rails'
+  gem 'sass-rails', '~> 4.0.0' # Use SCSS for stylesheets
+  gem 'bootstrap-sass' # Pull our selves up by our Bootstraps
+  gem 'slim-rails' # Lose some weight
 
 # Use Uglifier as compressor for JavaScript assets
   gem 'uglifier', '>= 1.3.0'
@@ -52,21 +45,11 @@ end
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder', '~> 1.2'# JSON APIs with ease
+
+gem 'tzinfo-data', platforms: [:mingw, :mswin] # Rails Core Windows Dependency, Provides Time Zone Info
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
-

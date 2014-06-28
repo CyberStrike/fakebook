@@ -1,42 +1,52 @@
 class UserFriendshipsController < ApplicationController
 
-  before_filter :authenticate_user!, only: [:new, :create]
+  before_filter :authenticate_user!, only: [:new, :create, :update, :destroy]
 
   def new
-
-    #debug
-    logger.debug "Friend Params: #{friend_params} "
-
-    if friend_params.empty?
+    if params[:friend_id].empty?
       raise ActiveRecord::RecordNotFound
     else
       @friend = User.find(params[:friend_id])
-      @user_friendship = current_user.user_friendships.new(friend: @friend)
+      @user_friendship = current_user.user_friendships.create
     end
 
-      #error handler
-  rescue ActiveRecord::RecordNotFound
-    flash[:alert] = "Friend not found"
+    #error handler
+    rescue ActiveRecord::RecordNotFound
+      flash[:alert] = "Friend not found"
 
   end
 
   def create
+    respond_to do
+      if params[:user_friendship][:friend_id]
+        @friend = User.find(params[:user_friendship][:friend_id])
+        if current_user.user_friendships.find_by_friend_id(@friend)
+          flash[:alert] = "You are already friends with #{@friend.first_name}"
+          redirect_to profile_path(@friend.username)
+        else
+          @user_friendship = current_user.user_friendships.new(friend: @friend)
+          @user_friendship.save
+          flash[:success] = "You are now friends with #{@friend.first_name}"
+          redirect_to profile_path(@friend.username)
+        end
+      else
+        flash[:alert] = 'User Required'
+        redirect_to root_path
+      end
+    end
+  end
 
-    if params[:friend_id]
-      @friend = friend_params
-      logger.debug "#{@friend.inspect}"
-      @user_friendship = current_user.user_friendships.new(friend: @friend)
-      @user_friendship.save
-      flash[:success] = "You are now friend with #{users(:nyk).first_name}"
-      redirect_to profile_path(@friend.username)
-    else
-      flash[:alert] = 'User Required'
-      redirect_to root_path
+  def update
+
+    if params[:user_friendship][:friend_id]
+      @friend = User.find(params[:user_friendship][:friend_id])
+      @user_friendship = current_user.user_friendships.create(friend: @friend)
     end
 
   end
 
   private
+
   # Use callbacks to share common setup or constraints between actions.
   #def set_status
   #  @status = Status.find(params[:id])
